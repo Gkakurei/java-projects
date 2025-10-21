@@ -1,0 +1,36 @@
+public class BitOperator02 {
+    public static void main(String[] args) {
+        System.out.println(1 >> 2); // 0
+        System.out.println(1 << 2); // 4
+        System.out.println(4 << 3); // 4*2*2*2 = 32
+        System.out.println(15 >> 2); // 15/2/2 = 3
+
+
+/*
+1.计算下列表达式的结果
+10/3 = ？；10/5 = ？；10%2 = ？；10.5%3 = ？
+2.试说出下面代码的结果
+int i = 66;
+System.out.println(++i+i);
+
+*/
+
+System.out.println(10/3); //3
+System.out.println(10/5);  //2
+System.out.println(10%2); //0
+System.out.println(-10.5%3); // -1.5
+// a % b 当a是小数时，公式 = a - (int)a/b*b
+// -10.5 % 3 = -10.5 - (int)(-10.5/3)*3 = -10.5 - (-10/3)*3 = -10.5 - (-3)*3 = -10.5 + 9 = -1.5
+// 有小数的运算，最后得到的结果是近似值
+System.out.println(-10.4%3); // -1.4000000000000004
+int i = 66;
+System.out.println(++i+i); // 67+67=134
+
+重新提交
+
+
+
+
+
+}
+}
